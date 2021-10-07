@@ -1,0 +1,57 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?4bba87d239748e52158bb2b4d4698243") format("truetype"),
+url("./flaticon.woff?4bba87d239748e52158bb2b4d4698243") format("woff"),
+url("./flaticon.woff2?4bba87d239748e52158bb2b4d4698243") format("woff2"),
+url("./flaticon.eot?4bba87d239748e52158bb2b4d4698243#iefix") format("embedded-opentype"),
+url("./flaticon.svg?4bba87d239748e52158bb2b4d4698243#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "complete": "\f101",
+    "customer-review": "\f102",
+    "calendar": "\f103",
+    "mail-send": "\f104",
+    "support": "\f105",
+    "vector": "\f106",
+    "user-experience": "\f107",
+    "innovation": "\f108",
+);
+
+.flaticon-complete:before {
+    content: map-get($flaticon-map, "complete");
+}
+.flaticon-customer-review:before {
+    content: map-get($flaticon-map, "customer-review");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-mail-send:before {
+    content: map-get($flaticon-map, "mail-send");
+}
+.flaticon-support:before {
+    content: map-get($flaticon-map, "support");
+}
+.flaticon-vector:before {
+    content: map-get($flaticon-map, "vector");
+}
+.flaticon-user-experience:before {
+    content: map-get($flaticon-map, "user-experience");
+}
+.flaticon-innovation:before {
+    content: map-get($flaticon-map, "innovation");
+}
